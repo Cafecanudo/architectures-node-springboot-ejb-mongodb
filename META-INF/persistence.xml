@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+
+    <persistence-unit name="persistenceUnit">
+        <class>br.com.softplan.dudebase.entities.CandidatoEntity</class>
+        <class>br.com.softplan.dudebase.entities.HabilidadeEntity</class>
+        <class>br.com.softplan.dudebase.entities.HistoricoEntity</class>
+        <class>br.com.softplan.dudebase.entities.PerfilEntity</class>
+        <class>br.com.softplan.dudebase.entities.UsuarioEntity</class>
+        <properties>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/dudebase"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+            <property name="hibernate.connection.user" value="root"/>
+        </properties>
+    </persistence-unit>
+
+</persistence>
