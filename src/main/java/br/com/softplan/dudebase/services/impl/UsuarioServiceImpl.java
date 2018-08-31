@@ -21,7 +21,7 @@ public class UsuarioServiceImpl implements UsuarioService {
     @Override
     public Optional<UsuarioEntity> buscarUsuarioPorEmail(String email) {
         log.info("Buscando usuario por email...");
-        return Optional.ofNullable(usuarioRepository.findByEmail(email));
+        return usuarioRepository.findByEmail(email);
     }
 
     @Override

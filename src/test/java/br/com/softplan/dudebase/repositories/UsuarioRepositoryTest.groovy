@@ -48,23 +48,23 @@ class UsuarioRepositoryTest {
 
     @Test
     void "Buscar usuario por email"() {
-        UsuarioEntity user = this.usuarioRepository.findByEmail("cafecanudo@gmail.com")
-        assertNotNull(user)
+        Optional<UsuarioEntity> user = this.usuarioRepository.findByEmail("cafecanudo@gmail.com")
+        assertTrue(user.isPresent())
     }
 
     @Test
     void "Nao deve encontrar usuario por email"() {
-        UsuarioEntity user = this.usuarioRepository.findByEmail("12312321312@gmail.com")
-        assertNull(user)
+        Optional<UsuarioEntity> user = this.usuarioRepository.findByEmail("12312321312@gmail.com")
+        assertTrue(!user.isPresent())
     }
 
     @Test
     void "Efetuar login de usuario"() {
-        UsuarioEntity user = this.usuarioRepository.findByEmail("cafecanudo@gmail.com")
-        assertNotNull(user)
+        Optional<UsuarioEntity> user = this.usuarioRepository.findByEmail("cafecanudo@gmail.com")
+        assertTrue(user.isPresent())
 
-        assertTrue("Senha e igual", CryptPassword.compare("123", user.getSenha()))
-        assertEquals("Senha nao pode ser igual", CryptPassword.compare("1123", user.getSenha()), false)
+        assertTrue("Senha e igual", CryptPassword.compare("123", user.get().getSenha()))
+        assertEquals("Senha nao pode ser igual", CryptPassword.compare("1123", user.get().getSenha()), false)
     }
 
     @Test
