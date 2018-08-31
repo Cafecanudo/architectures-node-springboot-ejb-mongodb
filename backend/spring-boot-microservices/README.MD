@@ -1,0 +1,1 @@
+#Descreverei aqui como implmentar usando tentencias para um melhor desenvolvimento
