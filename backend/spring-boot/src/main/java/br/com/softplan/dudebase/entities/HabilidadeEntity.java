@@ -14,7 +14,7 @@ public class HabilidadeEntity {
     @Id
     @Column(name = "id_habilidade")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int idHabilidade;
+    private Long idHabilidade;
 
     @Basic
     @Column(name = "tipo")

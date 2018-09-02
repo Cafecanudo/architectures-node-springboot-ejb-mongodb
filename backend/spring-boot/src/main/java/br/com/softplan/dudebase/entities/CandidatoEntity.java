@@ -14,7 +14,7 @@ public class CandidatoEntity {
     @Id
     @Column(name = "id_candidato")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int idCandidato;
+    private Long idCandidato;
 
     @Basic
     @Column(name = "telefone")

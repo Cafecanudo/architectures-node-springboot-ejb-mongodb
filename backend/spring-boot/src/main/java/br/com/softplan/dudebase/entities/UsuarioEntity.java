@@ -2,9 +2,7 @@ package br.com.softplan.dudebase.entities;
 
 import br.com.softplan.dudebase.entities.enums.TipoRedeSocialEnum;
 import br.com.softplan.dudebase.entities.enums.UsuarioStatusEnum;
-import br.com.softplan.dudebase.utils.CryptPassword;
 import lombok.Data;
-import org.hibernate.annotations.SelectBeforeUpdate;
 
 import javax.persistence.*;
 import java.util.Collection;
@@ -17,7 +15,7 @@ public class UsuarioEntity {
     @Id
     @Column(name = "id_usuario")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int idUsuario;
+    private Long idUsuario;
 
     @Basic
     @Column(name = "nome", nullable = false)
@@ -55,10 +53,4 @@ public class UsuarioEntity {
             }
     )
     private Collection<PerfilEntity> PerfisUsuario;
-
-    @PreUpdate
-    @PrePersist
-    private void criptografarSenha() {
-        this.senha = CryptPassword.cript(this.senha);
-    }
 }

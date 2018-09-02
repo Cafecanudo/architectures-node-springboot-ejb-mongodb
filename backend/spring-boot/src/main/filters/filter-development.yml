@@ -1,0 +1,8 @@
+hibernate:
+    format_sql: true
+    show_sql: true
+    use_sql_comments: true
+mysql:
+    database: dudebase_dev
+    password: ''
+    username: root

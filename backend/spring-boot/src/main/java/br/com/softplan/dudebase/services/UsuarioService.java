@@ -8,8 +8,12 @@ import java.util.Optional;
 
 public interface UsuarioService {
 
+    UsuarioEntity persistir(UsuarioEntity usuarioEntity);
+
     Optional<UsuarioEntity> buscarUsuarioPorEmail(final String email);
 
-    Optional<Page<UsuarioEntity>> buscarUsuarioContendoNomeOuEmail(final String nomeEmail, PageRequest pageRequest);
+    Optional<UsuarioEntity> buscarUsuarioPorID(final long id);
+
+    Page<UsuarioEntity> buscarUsuarioContendoNomeOuEmail(final String nomeEmail, PageRequest pageRequest);
 
 }

@@ -2,13 +2,13 @@
   {
     "nome": "WELLTON S. BARROS",
     "email": "cafecanudo@gmail.com",
-    "senha": "123",
+    "senha": "$2a$10$lvqpw0MCe5e/CVKoIXZvru71eR8IWvvkV4LFUL/FL.qk2JYqNNhoG",
     "status": "LIBERADO"
   },
   {
     "nome": "HENRIQUE SOFTPLAN",
     "email": "henriquze@gmail.com",
-    "senha": "123",
+    "senha": "$2a$10$lvqpw0MCe5e/CVKoIXZvru71eR8IWvvkV4LFUL/FL.qk2JYqNNhoG",
     "status": "LIBERADO"
   }
 ]

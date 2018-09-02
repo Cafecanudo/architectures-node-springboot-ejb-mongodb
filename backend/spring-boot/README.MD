@@ -3,10 +3,15 @@ descrever minha abordagem depois
 
 # Projecto
 
-####Obs lombok
+####Lib usadas
+    h2
+    lombok
+    groovy
+    checkstyle
+    jacoco
+    flyway
 
 # Desafio implementador fullstack
 
 ##### Master [![Build Status](https://travis-ci.org/Cafecanudo/softplan-desafio-fullstack.svg?branch=master)](https://travis-ci.org/Cafecanudo/softplan-desafio-fullstack)
 
-#groovy

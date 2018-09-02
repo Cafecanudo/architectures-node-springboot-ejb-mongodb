@@ -14,7 +14,7 @@ public class CryptPassword {
         return text != null ? bCryptEncoder.encode(text) : null;
     }
 
-    public static boolean compare(final String text1, final String text2){
+    public static boolean compare(final String text1, final String text2) {
         BCryptPasswordEncoder bCryptEncoder = new BCryptPasswordEncoder();
         return bCryptEncoder.matches(text1, text2);
     }

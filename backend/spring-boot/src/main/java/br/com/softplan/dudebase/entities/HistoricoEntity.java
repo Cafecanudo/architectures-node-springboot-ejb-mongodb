@@ -14,7 +14,7 @@ public class HistoricoEntity {
     @Id
     @Column(name = "id_historico")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int idHistorico;
+    private Long idHistorico;
 
     @Basic
     @Column(name = "observacao")

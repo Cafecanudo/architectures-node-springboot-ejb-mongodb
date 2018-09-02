@@ -1,0 +1,6 @@
+hibernate:
+    show_sql: true
+mysql:
+    database: dudebase_homolog
+    username: root
+    password: ''

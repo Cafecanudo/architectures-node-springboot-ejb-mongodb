@@ -12,7 +12,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class DudeBaseApplicationTest {
 
     @Test
-    public void initialTest(){
+    public void initialTest() {
 
     }
 
